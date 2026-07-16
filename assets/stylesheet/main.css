@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+
+@layer base{
+
+body {
+  @apply bg-gradient-to-br from-violet-100 via-fuchsia-50 to-sky-100 min-h-screen flex flex-col justify-center items-center;
+}
+
+}
+
+@layer components{
+
+.app-wrapper {
+  @apply max-w-2xl mx-auto px-4 py-10 flex flex-col gap-6;
+}
+
+/* ===== Preview box ===== */
+
+.preview-box {
+  @apply relative rounded-3xl p-8 shadow-lg transition-all duration-300 bg-gradient-to-br from-fuchsia-300 to-violet-400;
+}
+
+.preview-topbar {
+  @apply flex justify-end mb-4;
+}
+
+.saved-badge {
+  @apply text-xs font-medium px-3 py-1 rounded-full bg-emerald-500 text-white opacity-0 transition-opacity duration-300;
+}
+
+.preview-title {
+  @apply text-2xl font-semibold text-violet-950 mb-2;
+}
+
+.preview-text {
+  @apply text-base leading-relaxed text-violet-900/80 mb-6;
+}
+
+
+/* ===== Controls grid ===== */
+
+.controls-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-4;
+}
+
+.control-card {
+  @apply bg-white/70 backdrop-blur-sm rounded-2xl p-4 shadow-sm border border-white/50;
+}
+
+.control-label {
+  @apply text-xs font-medium text-violet-900/70 mb-3;
+}
+
+.palette-row {
+  @apply flex gap-2;
+}
+
+.font-select {
+  @apply w-full rounded-lg border border-violet-200 bg-white px-3 py-2 text-sm text-violet-950 cursor-pointer focus:outline-none focus:ring-2 focus:ring-violet-400;
+}
+
+.range-slider {
+  @apply w-full h-2 rounded-full bg-violet-200 appearance-none cursor-pointer accent-fuchsia-500;
+}
+
+.mode-toggle {
+  @apply flex gap-2;
+}
+
+.mode-btn {
+  @apply flex-1 text-xs font-medium px-3 py-2 rounded-lg bg-violet-100 text-violet-900 cursor-pointer transition hover:bg-violet-200;
+}
+
+.mode-btn-active {
+  @apply bg-violet-950 text-white hover:bg-violet-950;
+}
+
+.footer-actions {
+  @apply flex gap-3;
+}
+
+.btn-random {
+  @apply flex-1 flex items-center justify-center gap-2 bg-fuchsia-500 text-white text-sm font-semibold px-5 py-3 rounded-xl cursor-pointer transition hover:bg-fuchsia-600 active:scale-95;
+}
+
+.btn-reset {
+  @apply flex items-center justify-center px-4 py-3 rounded-xl bg-white/70 text-violet-950 border border-violet-200 cursor-pointer transition hover:bg-violet-100 active:scale-95;
+}
+
+.hint-text {
+  @apply text-xs text-violet-900/50 text-center mt-2;
+}
+
+/* ///////footer///// */
+.footer{
+    @apply w-full sm:w-10/12 lg:w-12/12 relative overflow-hidden flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-between gap-3 sm:gap-4 rounded-xl sm:rounded-2xl px-5 py-4 border border-white/40 bg-cyan-600 backdrop-blur-xl shadow-lg shadow-emerald-300/40
+}
+.footer-profile{
+    @apply relative z-10 flex items-center gap-3
+}
+.footer-avatar{
+    @apply w-15 h-15 sm:w-25 sm:h-25 rounded-full object-cover border-2 border-white/70
+}
+.footer-name{
+    @apply text-white text-[17px] sm:text-[20px] text-sm font-semibold m-0
+}
+.footer-role{
+    @apply text-white/80 text-sm m-0
+}
+.footer-socials{
+    @apply relative z-10 flex gap-2
+}
+.footer-socials a{
+    @apply w-10 h-10 rounded-full bg-white/15 flex items-center justify-center text-white text-[23px] hover:bg-white/25 transition-all duration-300
+}
+.blob{
+    @apply absolute rounded-full bg-white/10
+}
+.blob-1{
+    @apply w-24 h-24 -top-8 -left-6
+}
+.blob-2{
+    @apply w-16 h-16 -bottom-6 right-10
+}
+    /* ///////footer///// */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* npx @tailwindcss/cli -i ./src/assets/stylesheet/main.css -o ./src/assets/stylesheet/output.css --watch */

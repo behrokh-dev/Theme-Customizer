@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme-Customizer✨</title>
+    <link rel="stylesheet" href="assets/stylesheet/output.css" />
+    <link rel="stylesheet" href="assets/icon/remixicon.css">
+  </head>
+  <body>
+    <main class="app-wrapper">
+      <section class="preview-box" id="preview-box">
+        <div class="preview-topbar">
+          <span class="saved-badge" id="saved-badge">saved✅</span>
+        </div>
+
+        <h1 class="preview-title" id="preview-title">
+          Hi, Im Behrokh, a frontend developer.
+        </h1>
+
+        <p class="preview-text" id="preview-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          labore odio corrupti fuga quam illo accusamus temporibus ducimus
+          commodi et!
+        </p>
+      </section>
+
+      <section class="controls-grid">
+        <div class="control-card">
+          <p class="control-label">Color Palette</p>
+          <div class="palette-row" id="palette-row"></div>
+        </div>
+
+        <div class="control-card">
+          <p class="control-label">font</p>
+          <select class="font-select" id="font-select">
+            <option value="rounded">Rounded</option>
+            <option value="serif">Classic</option>
+            <option value="mono">Mono Space</option>
+            <option value="verdana">Weradana</option>
+            <option value="playful">Playfull</option>
+            <option value="times">Times</option>
+          </select>
+        </div>
+
+        <div class="control-card">
+          <p class="control-label">Border Radius :</p>
+          <input
+            type="range"
+            class="range-slider"
+            id="radius-slider"
+            min="0"
+            max="40"
+            value="20"
+            step="1"
+          />
+        </div>
+
+        <div class="control-card">
+          <p class="control-label">Shadow</p>
+          <input
+            type="range"
+            class="range-slider"
+            id="shadow-slider"
+            min="0"
+            max="40"
+            value="0"
+            step="2"
+          />
+        </div>
+
+        <div class="control-card">
+          <p class="control-label">Letter Spacing</p>
+          <input
+            type="range"
+            class="range-slider"
+            id="letterspacing-slider"
+            min="0"
+            max="6"
+            value="0"
+            step="0.5"
+          />
+        </div>
+
+        <div class="control-card">
+          <p class="control-label">Mode of Background</p>
+          <div class="mode-toggle">
+            <button class="mode-btn" id="mode-solid">Solid</button>
+            <button class="mode-btn mode-btn-active" id="mode-gradient">
+              Gradiant
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-actions">
+        <button class="btn-random" id="random-btn">
+          Generate Randomly and save!
+        </button>
+        <button class="btn-reset" id="reset-btn">🔄️</button>
+      </section>
+      <!-- ////////////footer/////////// -->
+      <footer class="footer">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+
+        <div class="footer-profile">
+          <img
+            src="assets/img/photo_2026-02-20_17-59-51 (2).jpg"
+            alt="avatar"
+            class="footer-avatar"
+          />
+          <div>
+            <p class="footer-name">Behrokh Naderi</p>
+            <p class="footer-role">Frontend Developer</p>
+          </div>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/behrokh_dev" target="_blank"
+            ><i class="ri-instagram-line"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/behrokh-naderi/" target="_blank"
+            ><i class="ri-linkedin-box-fill"></i
+          ></a>
+          <a href="https://github.com/behrokh-dev" target="_blank"
+            ><i class="ri-github-fill"></i
+          ></a>
+          <a href="mailto:naderibehrokh@gmail.com" target="-blank"
+            ><i class="ri-google-fill"></i
+          ></a>
+        </div>
+      </footer>
+      <!-- ////////////footer/////////// -->
+    </main>
+    <script src="assets/javascript/master.js"></script>
+  </body>
+</html>
