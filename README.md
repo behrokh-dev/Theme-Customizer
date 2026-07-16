@@ -8,9 +8,7 @@ A responsive **Theme Customizer** built with **HTML**, **Tailwind CSS**, and **V
 
 ## 📸 Preview
 
-
-
-
+<img width="1917" height="866" alt="Image" src="https://github.com/user-attachments/assets/30e94cc4-5940-4632-b898-98fcd693e2ab" />
 
 ---
 
